@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de compra de pintura</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <main class="contenedor">
+        <section class="tarjeta">
+            <h1>Cálculo de compra de pintura</h1>
+            <p>Precio por tarro: $9.000</p>
+
+            {% if error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+
+            <form method="POST">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="0" required>
+
+                <label for="cantidad">Cantidad de tarros:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+                <button type="submit" class="boton">
+                    Calcular compra
+                </button>
+
+            </form>
+
+            <a href="/" class="volver">Volver al menú principal</a>
+        </section>
+    </main>
+
+</body>
+</html>

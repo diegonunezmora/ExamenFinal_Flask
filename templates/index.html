@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Final - Programación Web</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <main class="contenedor">
+        <h1>Examen Final de Programación Web</h1>
+        <p>Selecciona el ejercicio que deseas realizar.</p>
+
+        <section class="tarjeta">
+            <h2>Ejercicio 1: Cálculo de compra de pintura</h2>
+            <p>Calcula el total de una compra aplicando descuentos según la edad.</p>
+            <a href="/ejercicio1" class="boton">Ir al ejercicio 1</a>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Ejercicio 2: Inicio de sesión</h2>
+            <p>Ingresa tus credenciales para acceder al sistema.</p>
+            <a href="/ejercicio2" class="boton">Ir al ejercicio 2</a>
+        </section>
+    </main>
+
+</body>
+</html>
